@@ -35,7 +35,8 @@ html {
 }
 
 .main{
-  height: fit-content;
+  display: flex;
+  justify-content: space-evenly;
   width: 100%;
 }
 
