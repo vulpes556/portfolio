@@ -1,0 +1,127 @@
+.navbar-main {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    background-color: antiquewhite;
+    position: sticky;
+    height: 5rem;
+    width: 100%;
+    font-weight: 999;
+    font-size: x-large;
+}
+
+
+
+.navbar-main::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, rgb(63, 17, 17), transparent);
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+}
+
+
+a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #257180;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+
+
+a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+
+/* normal view */
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+    transition: height 1s ease;
+}
+
+
+.nav-links a {
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #257180;
+}
+
+.hamburger {
+    width: 0;
+    height: 0;
+    display: flex;
+    cursor: pointer;
+}
+
+.hamburger-icon {
+    font-size: 30px;
+    color: #257180;
+
+}
+
+
+/* when small */
+
+@media (max-width: 768px) {
+
+    .hamburger {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .nav-links {
+        display: block;
+        position: absolute;
+        border-radius: 33px;
+        top: 3.5rem;
+        left: 6rem;
+        width: 0;
+        height: 0;
+        background-color: #33333348;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: height 0.5s ease, width 0.5s ease;
+        overflow: hidden;
+        text-align: center;
+        backdrop-filter: blur(5px);
+    }
+
+
+
+    .nav-links.active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 10rem;
+        height: 20rem;
+    }
+
+}
