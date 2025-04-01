@@ -1,4 +1,5 @@
 .tech-stack-button {
+
     padding: 12px 24px;
     border: none;
     border-radius: 12px;
@@ -11,8 +12,13 @@
 
 
 .tech-stack-button button {
-    color: #6ddaf0;
+    color: inherit;
     font-weight: 800;
+}
+
+
+html.dark .tech-stack-button button {
+    color: #6ddaf0;
 }
 
 .tech-stack-button:hover {
