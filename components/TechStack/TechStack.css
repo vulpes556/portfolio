@@ -1,0 +1,29 @@
+
+
+
+
+.tech-stack-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+
+.tech-category {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.tech-stack-main h2,
+.tech-stack-main h3 {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* https://techicons.dev/icons/nextjs */
