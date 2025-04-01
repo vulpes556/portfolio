@@ -21,10 +21,10 @@ export default function Bio() {
 
 
     return (
-        <div className="bio-main">
+        <div id="bio" className="bio-main">
             <div className="portrait-container">
-            <Image className="portrait" alt="An image of the developer" layout="intrinsic" width={200} height={200} src={"/portrait2.jpg"}>
-            </Image>
+                <Image className="portrait" alt="An image of the developer" layout="intrinsic" width={200} height={200} src={"/portrait2.jpg"}>
+                </Image>
             </div>
             <div className="name-div">Bálint Kovács ({calculateAge("1996-07-22")}) </div>
             <span>Full Stack Developer</span>

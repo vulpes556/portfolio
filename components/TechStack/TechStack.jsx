@@ -7,19 +7,20 @@ import "./TechStack.css";
 export default function TechStack() {
     const frontend = [
         { name: "JavaScript", img: "/js.png", alt: "JavaScript button" },
+        { name: "Next.js", img: "/next.png", alt: "Next.js button" },
+        { name: "React", img: "/react.png", alt: "React button" },
         { name: "HTML", img: "/html.png", alt: "HTML button" },
         { name: "CSS", img: "/css.png", alt: "CSS button" },
-        { name: "React", img: "/react.png", alt: "React button" },
         { name: "Bootstrap", img: "/bootstrap.png", alt: "Bootstrap button" },
         { name: "Node.js", img: "/node.png", alt: "Node.js button" },
-        { name: "Next.js", img: "/next.png", alt: "Next.js button" }
     ];
 
     const backend = [
         { name: "C#", img: "/csharp.png", alt: "C# button" },
         { name: ".NET", img: "/net.png", alt: ".NET button" },
         { name: "IdentityFW", img: "/nuget.png", alt: "IdentityFW button" },
-        { name: "EntityFW", img: "/nuget.png", alt: "EntityFW button" }
+        { name: "EntityFW", img: "/nuget.png", alt: "EntityFW button" },
+        { name: "Express.js", img: "/express.png", alt: "Express.js button" }
     ];
 
     const database = [
@@ -35,7 +36,7 @@ export default function TechStack() {
 
 
     return (
-        <div className="tech-stack-main">
+        <div id="my-stack" className="tech-stack-main">
             <h2>My Stack</h2>
             <h3>Frontend</h3>
             <div className="tech-category frontend">

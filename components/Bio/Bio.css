@@ -3,6 +3,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 1px solid black;
+    font-weight: 600;
+    font-size: large;
+    max-width: 40rem;
+    width: auto;
+    margin-top: 4rem;
 }
 
 
