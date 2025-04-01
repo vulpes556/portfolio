@@ -1,0 +1,69 @@
+.projects-main {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2rem;
+}
+
+.project {
+    border: 1px solid #1db3d1;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 50rem;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+
+.project:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.project-name {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    align-self: flex-start;
+    padding: 1rem;
+}
+
+.project-description {
+    align-self: center;
+    text-align: center;
+    text-overflow: wrap;
+    width: auto;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.img-container {
+    max-width: 100%;
+    width: auto;
+    padding: 1rem;
+}
+
+
+.projects-main a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: normal;
+    width: fit-content;
+}
+
+
+@media (max-width: 768px) {
+
+    .projects-main {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+
+    .project-name {
+        align-self: center;
+    }
+}
