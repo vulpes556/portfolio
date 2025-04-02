@@ -99,7 +99,7 @@
     }
 
     .nav-links {
-        display: block;
+        display: hidden;
         position: absolute;
         border-radius: 33px;
         top: 3.5rem;
@@ -113,7 +113,8 @@
         transition: height 0.5s ease, width 0.5s ease;
         overflow: hidden;
         text-align: center;
-        backdrop-filter: blur(20px);
+        backdrop-filter: blur(100px);
+        -webkit-backdrop-filter: blur(100px);
     }
 
 

@@ -15,6 +15,7 @@
     max-width: 50rem;
     transition: all 0.1s ease-in-out;
     cursor: pointer;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.301);
 }
 
 

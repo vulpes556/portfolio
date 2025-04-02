@@ -1,41 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-@keyframes waveTransition {
-  0% {
-    background-position: 0% 50%;
-  }
 
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
 
 
 
 /* Default Light Mode */
 body {
   font-family: 'Chakra Petch', sans-serif;
-  background: linear-gradient(to bottom right, wheat, rgb(155, 117, 46));
-  background-size: cover;
+  /* fallback in case of outdated browser */
+  background-color: wheat;
+
+  background: linear-gradient(140deg, rgba(245,222,179,1) 0%, rgba(155,117,46,1) 28%, rgba(154,127,90,1) 62%, rgba(140,116,89,1) 74%, rgba(113,73,36,1) 93%);
+
+
+  /* background: linear-gradient(140deg, rgba(245, 222, 179, 1) 0%, rgba(155, 117, 46, 1) 28%, rgba(66, 42, 20, 1) 100%); */
+
   color: #257180;
   background-size: 300% 300%;
   margin: 0;
   padding: 0;
   animation: waveTransition 1.5s ease-in-out;
   height: auto;
-  transition: color 0.5s ease-in-out, background-color 1.5s ease-in-out;
+  /* transition: color 0.5s ease-in-out, background-color 1.5s ease-in-out; */
+  background-position: 0% 0%;
+  transition: background-position 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
 }
 
 /* Dark Mode */
 .dark body {
-  background: linear-gradient(to bottom right, rgb(116, 104, 82), rgb(155, 117, 46));
   color: #1db3d1;
-  background-position: 100% 50%;
-  animation: waveTransition 1.5s ease-in-out;
+  background-position: 100% 100%;
 }
 
 html {
@@ -64,5 +59,6 @@ html {
   .main {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 }

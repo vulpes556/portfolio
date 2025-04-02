@@ -1,8 +1,11 @@
 "use client";
 import "./ThemeToggleBtn.css";
-import Image from "next/image";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
+import { MdLightMode } from "react-icons/md";
+import { MdDarkMode } from "react-icons/md";
+
+
 
 export default function ThemeToggle() {
     const { theme, setTheme } = useTheme();
@@ -25,13 +28,9 @@ export default function ThemeToggle() {
 
     return (
         <button onClick={handleToggle} className={isToggling ? "toggle-animation" : ""}>
-            <Image
-                alt="theme-toggle"
-                width={50}
-                height={50}
-                src={theme === "dark" ? "/light-mode.svg" : "/dark-mode.png"}
-                className="theme-icon"
-            />
+            {
+                theme === "dark" ? <MdLightMode size={40} className="theme-icon" /> : <MdDarkMode size={40} className="theme-icon" />
+            }
         </button>
     );
 }
