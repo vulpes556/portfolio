@@ -39,6 +39,16 @@ html {
 
 .main {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+
+.top-section{
+  flex-direction: row;
+  display: flex;
   justify-content: space-evenly;
   width: 100%;
   gap: 1rem;
@@ -53,12 +63,17 @@ html {
 }
 
 
+.bottom-section{
+  width: 100%;
+}
+
 
 @media (max-width: 768px) {
 
-  .main {
+  .top-section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 }

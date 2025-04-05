@@ -3,13 +3,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid #6ddaf0;
     font-weight: 600;
     font-size: large;
     max-width: 40rem;
     min-width: 30rem;
     width: auto;
     margin-top: 4rem;
+    border: 1px solid #6ddaf0;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.301);
     padding: 1rem;
     margin: 1rem;
@@ -21,10 +21,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    width: 10rem;
-    height: 10rem;
+    width: 20rem;
+    height: 20rem;
     overflow: hidden;
+}
+
+
+.portrait-container img{
+    border-radius: 5%;
+    object-fit: cover;
 }
 
 .contacts {
@@ -46,6 +51,11 @@
 
 .contacts button:active {
     transform: scale(1.05);
+}
+
+
+.self-description{
+    text-align: center;
 }
 
 @media (max-width: 768px) {
