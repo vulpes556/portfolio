@@ -1,0 +1,116 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    text-align: center;
+    width: 25%;
+    height: 40rem;
+    margin-top: 3rem;
+    gap: 1rem;
+    border-radius: 20px;
+
+    /* future consideration  */
+
+    /* background-color: rgba(197, 149, 89, 0.178);
+    background: linear-gradient(140deg, rgba(154,127,90,1) 1%, rgba(245,222,179,1) 41%, rgba(154,127,90,1) 73%); */
+    /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.301); */
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.contact-form input {
+    width: 50%;
+    padding: 1rem;
+}
+
+.contact-form textarea {
+    width: 80%;
+    height: 10rem;
+    resize: none;
+    font-weight: 800;
+}
+
+
+
+.contact-form textarea,
+.contact-form input {
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.301);
+    transition: background-color 1s ease;
+    background-color: rgb(252, 209, 157);
+    color: inherit;
+}
+
+html.dark .contact-form textarea,
+html.dark .contact-form input {
+    color: inherit;
+    background-color: rgb(71, 46, 15);
+    font-size: 18px;
+}
+
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: inherit
+}
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    background-color: rgb(230, 180, 120);
+}
+
+
+html.dark .contact-form input:focus,
+html.dark .contact-form textarea:focus {
+    outline: none;
+    background-color: rgb(97, 67, 39);
+}
+
+
+
+
+.contact-form button {
+    width: 15rem;
+    height: 4rem;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.301);
+    color: inherit;
+    font-weight: 800;
+}
+
+
+
+
+html.dark .contact-form button {
+    color: #6ddaf0;
+}
+
+.contact-form button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.contact-form button:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        width: 80%;
+    }
+}
