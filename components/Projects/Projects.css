@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: stretch;
     gap: 2rem;
+    margin: 1rem;
 }
 
 .project {
@@ -44,6 +45,10 @@
     max-width: 100%;
     width: auto;
     padding: 1rem;
+}
+
+.img-container img {
+    border-radius: 10px;
 }
 
 
