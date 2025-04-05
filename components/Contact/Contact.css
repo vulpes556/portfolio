@@ -3,11 +3,12 @@
     flex-direction: column;
     justify-self: center;
     text-align: center;
-    width: 25%;
+    width: 50%;
     height: 40rem;
     margin-top: 3rem;
     gap: 1rem;
     border-radius: 20px;
+    max-width: 30rem;
 
     /* future consideration  */
 
@@ -46,6 +47,7 @@
     transition: background-color 1s ease;
     background-color: rgb(252, 209, 157);
     color: inherit;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 html.dark .contact-form textarea,
@@ -58,7 +60,8 @@ html.dark .contact-form input {
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-    color: inherit
+    color: inherit;
+    font-family: inherit;
 }
 
 
