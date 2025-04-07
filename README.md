@@ -21,9 +21,7 @@ Welcome to my personal portfolio site! Built with **Next.js**, styled with **Rea
 ```bash
 git clone https://github.com/vulpes556/portfolio.git
 npm install
-npm run dev
 ```
-Visit http://localhost:3000 in your browser to see it in action.
 
 Create a .env.local file in the root directory.
 
@@ -33,3 +31,9 @@ Add your email credentials:
 EMAIL_USER=your-email@example.com
 EMAIL_PASS=your-email-password
 ```
+
+Then:
+```bash
+npm run dev
+```
+Visit http://localhost:3000 in your browser to see it in action.
