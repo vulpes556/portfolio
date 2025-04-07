@@ -6,6 +6,10 @@
     margin: 1rem;
 }
 
+.projects-main img {
+    object-fit: cover;
+}
+
 .project {
     border: 1px solid #1db3d1;
     border-radius: 2%;
