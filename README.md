@@ -2,6 +2,8 @@
 
 Welcome to my personal portfolio site! Built with **Next.js**, styled with **React Themes**, and enhanced with **Nodemailer** for seamless contact functionality.
 
+You can check out this site deployed: https://portfolio-vulpes-projects-b207aa2d.vercel.app/
+
 ##  Tech Stack
 
 - **Framework**: [Next.js](https://nextjs.org/)
