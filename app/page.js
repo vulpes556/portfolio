@@ -13,10 +13,10 @@ export default function Home() {
       </div>
       <div className="right-section">
         <TechStack />
-        <Projects />
       </div>
       </div>
       <div className="bottom-section">
+        <Projects />
       <Contact />
       </div>
     </div>
