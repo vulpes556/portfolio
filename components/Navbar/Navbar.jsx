@@ -13,6 +13,10 @@ export default function Navbar() {
         setIsMenuOpen(!isMenuOpen);
     }
 
+
+    function closeMenu() {
+        setIsMenuOpen(false);
+    }
     return (
         <div className="navbar-main">
             {/* Hamburger Icon */}
@@ -22,10 +26,10 @@ export default function Navbar() {
 
             {/* Navbar Links */}
             <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-                <a href="#bio">Bio</a>
-                <a href="#my-stack">My Stack</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+                <a onClick={closeMenu} href="#bio">Bio</a>
+                <a onClick={closeMenu} href="#my-stack">My Stack</a>
+                <a onClick={closeMenu} href="#projects">Projects</a>
+                <a onClick={closeMenu} href="#contact">Contact</a>
             </div>
             <ThemeToggle />
         </div>
