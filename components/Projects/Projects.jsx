@@ -14,7 +14,7 @@ export default function Projects() {
             <div className="project" onClick={() => window.open("https://github.com/LadleMeThis/LadleMeThis", "_blank")}>
                 <div className="project-name">Ladle Me This</div>
                 <div className="img-container hover">
-                    <Image width={400} height={400} alt="Picture from a project" src={ladleMeThisPic} />
+                    <Image fill alt="Picture from a project" src={ladleMeThisPic} />
                 </div>
                 <div className="project-description">
                     A team project of 2, where we created a platform where users can discover and share recipes with one another.
@@ -24,7 +24,7 @@ export default function Projects() {
             <div className="project" onClick={() => window.open("https://github.com/BenceV95/HousholdResponsibilitySharingApp", "_blank")}>
                 <div className="project-name">Pura Domus</div>
                 <div className="img-container">
-                    <Image width={400} height={400} alt="Picture from a project" src={householdPic} />
+                    <Image fill alt="Picture from a project" src={householdPic} />
                 </div>
                 <div className="project-description">
                     Pura Domus, latin for clean home. It's a household chore assigner/tracker app.
@@ -34,7 +34,7 @@ export default function Projects() {
             <div className="project" onClick={() => window.open("https://github.com/vulpes556/portfolio", "_blank")}>
                 <div className="project-name">My Portfolio</div>
                 <div className="img-container">
-                    <Image width={400} height={400} alt="Picture from a project" src={portfolioPic} />
+                    <Image fill  alt="Picture from a project" src={portfolioPic}/>
                 </div>
                 <div className="project-description">This very site's code!</div>
             </div>

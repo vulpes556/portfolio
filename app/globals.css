@@ -10,7 +10,7 @@ body {
   /* fallback in case of outdated browser */
   background-color: wheat;
 
-  background: linear-gradient(140deg, rgba(245,222,179,1) 0%, rgba(155,117,46,1) 28%, rgba(154,127,90,1) 62%, rgba(140,116,89,1) 74%, rgba(113,73,36,1) 93%);
+  background: linear-gradient(140deg, rgba(245, 222, 179, 1) 0%, rgba(155, 117, 46, 1) 28%, rgba(154, 127, 90, 1) 62%, rgba(140, 116, 89, 1) 74%, rgba(113, 73, 36, 1) 93%);
 
 
   /* background: linear-gradient(140deg, rgba(245, 222, 179, 1) 0%, rgba(155, 117, 46, 1) 28%, rgba(66, 42, 20, 1) 100%); */
@@ -46,7 +46,7 @@ html {
   gap: 1rem;
 }
 
-.top-section{
+.top-section {
   flex-direction: row;
   display: flex;
   justify-content: space-evenly;
@@ -63,12 +63,16 @@ html {
 }
 
 
-.bottom-section{
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
+  max-width: 100%;
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1630px) {
 
   .top-section {
     display: flex;
